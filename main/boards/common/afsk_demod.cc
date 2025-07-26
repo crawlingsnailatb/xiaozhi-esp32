@@ -328,7 +328,7 @@ namespace audio_wifi_config
                             if (calculated_checksum != received_checksum) {
                                 // Checksum mismatch
                                 ESP_LOGW(kLogTag, "Checksum mismatch: expected %d, got %d", 
-                                        received_checksum, calculated_checksum);
+                                         calculated_checksum,received_checksum);
                                 ClearBuffers();
                                 return false;
                             }
